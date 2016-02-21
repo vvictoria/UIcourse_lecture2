@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>Five Things You Should Know About HTML5 - Dive Into HTML5</title>
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <table>
+        <tr>
+            <td width="10%">
+            </td>
+            <td>
+                <div>
+                    <font size="4" face="Roboto Slab">
+                        <p>You are here: <a href="index.html"><font color="crimson">Home</font></a> &#9656; <a href="table-of-contents.html#introduction"><font color="crimson">Dive Into <abbr>HTML5</abbr></font></a> &#9656;
+                        <div align="center">
+                            <br>
+                            <br>
+                            <br>
+                            <font size="+2">
+                                <font face="Righteous"><h1>INTRODUCTION:<br>FIVE THINGS YOU SHOULD KNOW<br>ABOUT HTML<sub><font size="+4">5</font></sub></h1></font>
+                            </font>
+                            <br>
+                            <a><font color="crimson">show table of contents</font></a>
+                            <br>
+                            <br>
+                            <br>
+                            <font size="+3">&#10087;</font>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <font face="Righteous"><h1 id="one">1. It&rsquo;s not one big thing</h1></font>
+                        <br>
+                        <table width="100%">
+                            <tr>
+                                <td valign="top">
+                                    <p>You may well ask: &ldquo;How can I start using <abbr>HTML5</abbr> if older browsers don&rsquo;t support it?&rdquo; But the question itself is misleading. <abbr>HTML5</abbr> is not one big thing; it is a collection of individual features. So you can&rsquo;t detect &ldquo;<abbr>HTML5</abbr> support,&rdquo; because that doesn&rsquo;t make any sense. But you <i>can</i> detect support for individual features, like canvas, video, or geolocation.
+                                </td>
+                                <td valign="top">
+                                    <img src="1.png"/>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p>You may think of <abbr>HTML</abbr> as tags and angle brackets. That&rsquo;s an important part of it, but it&rsquo;s not the whole story. The <abbr>HTML5</abbr> specification also defines how those angle brackets interact with JavaScript, through the Document Object Model (<abbr>DOM</abbr>). <abbr>HTML5</abbr> doesn&rsquo;t just define a <font size="+2"><code>&lt;video&gt;</code></font> tag; there is also a corresponding <abbr>DOM</abbr> <abbr>API</abbr> for video objects in the <abbr>DOM</abbr>. You can use this <abbr>API</abbr> to detect support for different video formats, play a video, pause, mute audio, track how much of the video has been downloaded, and everything else you need to build a rich user experience around the <font size="+2"><code>&lt;video&gt;</code></font> tag itself.
+
+                        <p><a href="detect.html"><font color="crimson">Chapter 2</font></a> and <a href="everything.html"><font color="crimson">Appendix A</font></a> will teach you how to properly detect support for each new <abbr>HTML5</abbr> feature.
+                        <br>
+                        <br>
+                        <br>
+
+                        <font face="Righteous"><h1 id="two">2. You don&rsquo;t need to throw anything away</h1></font>
+                        <br>
+                        <br>
+                        <table width="100%">
+                            <tr>
+                                <td valign="top">
+                                    <img src="2.png"/>
+                                </td>
+                                <td valign="top">
+                                    <p>Love it or hate it, you can&rsquo;t deny that <abbr>HTML</abbr> 4 is the most successful markup format ever. <abbr>HTML5</abbr> builds on that success. You don&rsquo;t need to throw away your existing markup. You don&rsquo;t need to relearn things you already know. If your web application worked yesterday in <abbr>HTML</abbr> 4, it will still work today in <abbr>HTML5</abbr>. Period.
+                                    <p>Now, if you want to <i>improve</i> your web applications, you&rsquo;ve come to the right place. Here&rsquo;s a concrete example: <abbr>HTML5</abbr> supports all the form controls from <abbr>HTML</abbr> 4, but it also includes new input controls. Some of these are long-overdue additions like sliders and date pickers; others are more subtle. For example, the <font size="+2"><code>email</code></font> input type looks just like a text box, but mobile browsers will customize their</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p> onscreen keyboard to make it easier to type email addresses. Older browsers that don&rsquo;t support the <font size="+2"><code>email</code></font> input type will treat it as a regular text field, and the form still works with no markup changes or scripting hacks. This means you can start improving your web forms <i>today</i>, even if some of your visitors are stuck on IE 6.
+                        <p>Read all the gory details about <abbr>HTML5</abbr> forms in <a href="forms.html"><font color="crimson">Chapter 9</font></a>.
+                        <br>
+                        <br>
+                        <br>
+
+                        <font face="Righteous"><h1 id="three">3. It&rsquo;s easy to get started</h1></font>
+                        <br>
+                        <br>
+                        <table width="100%">
+                            <tr>
+                                <td valign="top">
+                                    <p>&ldquo;Upgrading&rdquo; to <abbr>HTML5</abbr> can be as simple as changing your <i>doctype</i>. The doctype should already be on the first line of every <abbr>HTML</abbr> page. Previous versions of <abbr>HTML</abbr> defined a lot of doctypes, and choosing the right one could be tricky. In <abbr>HTML5</abbr>, there is only one doctype:
+                                    <blockquote>
+                                    <p><font size="+2"><code>&lt;!DOCTYPE html&gt;</code></font>
+                                    </blockquote>
+                                </td>
+                                <td valign="top">
+                                    <img src="3.png"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Upgrading to the <abbr>HTML5</abbr> doctype won&rsquo;t break your existing markup, because <a rel="external" href="http://www.w3.org/TR/html5-diff/#absent-elements" target="_blank"><font color="crimson">obsolete elements</font></a> previously defined in HTML 4 will still render in <abbr>HTML5</abbr>. But it will allow you to use &mdash; and validate &mdash; new semantic elements like <font size="+2"><code>&lt;article&gt;</code></font>, <font size="+2"><code>&lt;section&gt;</code></font>, <font size="+2"><code>&lt;header&gt;</code></font>, and <font size="+2"><code>&lt;footer&gt;</code></font>. You&rsquo;ll learn all about these new elements in <a href="semantics.html"><font color="crimson">Chapter 3</font></a>.
+                        <br>
+                        <br>
+                        <br>
+
+                        <font face="Righteous"><h1 id="four">4. It already works</h1></font>
+                        <br>
+                        <br>
+                        <table width="100%">
+                            <tr>
+                                <td valign="top">
+                                    <img src="4.png"/>
+                                </td>
+                                <td valign="top">
+                                    <p>Whether you want to draw on a canvas, play video, design better forms, or build web applications that work offline, you&rsquo;ll find that <abbr>HTML5</abbr> is already well-supported. Firefox, Safari, Chrome, Opera, and mobile browsers already support canvas (<a href="canvas.html"><font color="crimson">Chapter 4</font></a>), video (<a href="video.html"><font color="crimson">Chapter 5</font></a>), geolocation (<a href="geolocation.html"><font color="crimson">Chapter 6</font></a>), local storage (<a href="storage.html"><font color="crimson">Chapter 7</font></a>), and more. Google already supports microdata annotations (<a href="extensibility.html"><font color="crimson">Chapter 10</font></a>). Even Microsoft &mdash; rarely known for blazing the trail of standards support &mdash; supports most <abbr>HTML5</abbr> features in Internet Explorer 9.
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%">
+                            <tr>
+                                <td valign="top">
+                                    <p>Each chapter of this book includes the all-too-familiar browser compatibility charts. But more importantly, each chapter includes a frank discussion of your options if you need to support older browsers. <abbr>HTML5</abbr> features like geolocation (<a href="geolocation.html"><font color="crimson">Chapter 6</font></a>) and video (<a href="video.html"><font color="crimson">Chapter 5</font></a>) were first provided by browser plugins like Gears or Flash. Other features, like canvas (<a href="canvas.html"><font color="crimson">Chapter 4</font></a>), can be emulated entirely in JavaScript. This book will teach you how to target the native features of modern browsers, without leaving older browsers behind.
+                                </td>
+                                <td valign="top">
+                                    <img src="5.png"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+
+                        <font face="Righteous"><h1 id="five">5. It&rsquo;s here to stay</h1></font>
+                        <br>
+                        <p>Tim Berners-Lee invented the world wide web in the early 1990s. He later founded the <abbr>W3C</abbr> to act as a steward of web standards, which the organization has done for more than 15 years. Here is what the <abbr>W3C</abbr> had to say about the future of web standards, in July 2009:
+                        <blockquote cite="http://www.w3.org/News/2009#item119">
+                        <p>Today the Director announces that when the <abbr>XHTML</abbr> 2 Working Group charter expires as scheduled at the end of 2009, the charter will not be renewed. By doing so, and by increasing resources in the <abbr>HTML</abbr> Working Group, <abbr>W3C</abbr> hopes to accelerate the progress of <abbr>HTML5</abbr> and clarify <abbr>W3C</abbr>&rsquo;s position regarding the future of <abbr>HTML</abbr>.
+                        </blockquote>
+                        <p><abbr>HTML5</abbr> is here to stay. <a href="past.html"><font color="crimson">Let&rsquo;s dive in</font></a>.
+                        <br>
+                        <br>
+                        <br>
+                        <div align="center">
+                            <font size="+3">&#10087;</font>
+                        </div>
+                        <br>
+                        <br>
+                        <table border="1px" cellspacing="0">
+                            <tr>
+                                <th bgcolor="black" colspan="2">
+                                    <h4><font color="white"><p align="left">DID YOU KNOW?</p></font></h4>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <blockquote><p>In association with Google Press, O&rsquo;Reilly is distributing this book in a variety of formats, including paper, ePub, Mobi, and <abbr>DRM</abbr>-free <abbr>PDF</abbr>. The paid edition is called &ldquo;HTML5: Up &amp; Running,&rdquo; and it is available now.
+                                    <p>If you liked this introduction and want to show your appreciation, you can <a href="http://www.amazon.com/HTML5-Up-Running-Mark-Pilgrim/dp/0596806027?ie=UTF8&amp;tag=diveintomark-20&amp;creativeASIN=0596806027"><font color="crimson">buy &ldquo;HTML5: Up &amp; Running&rdquo; with this affiliate link</font></a> or <a href="http://oreilly.com/catalog/9780596806033"><font color="crimson">buy an electronic edition directly from O&rsquo;Reilly</font></a>. You&rsquo;ll get a book, and I&rsquo;ll get a buck. I do not currently accept direct donations.
+                                    </blockquote>
+                                </td>
+                                <td>
+                                    <img src="6.png"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+
+                        <div align="center">
+                            <p class="c">Copyright MMIX&ndash;MMXI <a href="about.html"><font color="black">Mark Pilgrim</font></a>
+                            <br>
+                            <br>
+                            <form action="http://www.google.com/cse"><div><input type="hidden" name="cx" value="017884302975346027366:bgclqh8nvse"><input type="hidden" name="ie" value="UTF-8"><input type="search" name="q" size="25" placeholder="powered by Google&trade;">&nbsp;<input type="submit" name="sa" value="Search"></div></form>
+                        </div>
+                    </font>
+                </div>
+            </td>
+            <td width="10%">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

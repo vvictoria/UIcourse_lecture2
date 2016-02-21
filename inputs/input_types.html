@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Inputs</title>
+    <style>
+        .main {
+            font-size: 0;
+            padding: 10px;
+        }
+        .old, .new {
+            display: inline-block;
+            width: 50%;
+            font-size: 15px;
+            vertical-align: top;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+<head>
+</head>
+<body>
+    <div class="main">
+        <div class="old">
+            <h1>Input types (old):</h1>
+            <p>TEXT
+                <input type="text" name="tf" value="default" maxlenght="6"/>
+            </p>
+            <p>PASSWORD
+                <input type="password"/>
+            </p>
+            <p>CHECKBOX
+                <input type="checkbox" checked/>
+            </p>
+            <p>RADIO
+                <input type="radio"/>
+            </p>
+            <p>SUBMIT
+                <input type="submit"/>
+            </p>
+            <p>RESET
+                <input type="reset"/>
+            </p>
+            <p>FILE
+                <input type="file"/>
+            </p>
+            <p>HIDDEN
+                <input type="hidden"/>
+            </p>
+            <p>IMAGE
+                <input type="image" src="article.jpg" alt="image"/>
+            </p>
+            <p>BUTTON
+                <input type="button" name="tf" value="Push"/>
+            </p>
+            <p>+ ADDITIONAL:</p>
+            <p>SELECT
+                <select name="gender">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+                <select name="gender" size="4">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+            </p>
+            <p>TEXTAREA (multiline type="text")
+                <textarea></textarea>
+            </p>
+
+        </div>
+        <div class="new">
+            <h1>Input types (new):</h1>
+            <p>NUMBER (between 0 and 50):
+                <input type="number" min="0" max="50"/>
+            </p>
+            <p>DATE
+                <input type="date"/>
+            </p>
+            <p>COLOR
+                <input type="color"/>
+            </p>
+            <p>RANGE
+                <input type="range" name="points" min="0" max="10"/>
+            </p>
+            <p>MONTH
+                <input type="month"/>
+            </p>
+            <p>WEEK
+                <input type="week"/>
+            </p>
+            <p>TIME
+                <input type="time"/>
+            </p>
+            <p>DATETIME
+                <input type="datetime"/>
+            </p>
+            <p>DATETIME-LOCAL
+                <input type="datetime-local"/>
+            </p>
+            <p>EMAIL
+                <input type="email"/>
+            </p>
+            <p>SEARCH
+                <input type="search"/>
+            </p>
+            <p>TEL
+                <input type="tel"/>
+            </p>
+            <p>URL
+                <input type="url"/>
+            </p>
+        </div>
+    </div>
+</body>
+</head>
