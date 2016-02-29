@@ -1,0 +1,111 @@
+.intro1, .intro3 {
+    animation: slide-from-right 1s ease-out; /*анімуються тільки inline-block, block, table!!! на 1 елемент лише 1 анімація*/
+}
+
+@keyframes slide-from-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);       /* transform (щоб елемент не вилазив зі свого поточного місця) - правила: translate - переміщення; scale - розмір шрифта; rotate - обертання */
+    }
+}
+.intro2 {
+    animation: slide-from-left 1s ease-out;
+}
+
+@keyframes slide-from-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.introentire {
+        animation: color 15s 1s 2;
+}
+@keyframes color {
+    25% {
+        color: yellow;
+    }
+    50% {
+        color: crimson;
+    }
+    75% {
+        color: yellow;
+    }
+}
+#one, #two, #three, #four, #five {
+    animation: circle 1s;
+    transform-origin: 50% 50%;      /* обертання навколо своєї осі (x;y), наколо центру - 50% 50% */
+    display: inline-block;
+}
+@keyframes circle {
+    from {
+        transform: rotate(3600deg) scale(0.05);
+    }
+    to {
+        transform: rotate(0) scale(1);
+    }
+}
+img{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes blink {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+#didyouknow {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes change {
+    to {
+        color: black;
+    }
+}
+#background {
+    animation-name: change2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes change2 {
+    to {
+        background-color: white;
+    }
+}
+.advice:hover {
+    animation-name: moving;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes moving {
+    from {
+        tranform: translateY(100%) scale(1);
+    }
+    to{
+        transform: translateY(0) scale(0.9, 0.75);
+    }
+}
